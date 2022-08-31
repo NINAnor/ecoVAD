@@ -1,0 +1,25 @@
+[tool.poetry]
+name = "app"
+version = "0.1.0"
+description = ""
+authors = ["ben"]
+
+[tool.poetry.dependencies]
+python = "^3.8"
+torch = "1.11.0"
+torchvision = "0.12.0"
+torchaudio = "0.11.0"
+"pyannote.audio" = "^2.0.1"
+webrtcvad = "^2.0.10"
+sklearn = "^0.0"
+librosa = "^0.9.2"
+pydub = "^0.25.1"
+XlsxWriter = "^3.0.3"
+audiomentations = "^0.26.0"
+pytest = "^7.1.2"
+
+[tool.poetry.dev-dependencies]
+
+[build-system]
+requires = ["poetry-core>=1.0.0"]
+build-backend = "poetry.core.masonry.api"

@@ -1,0 +1,79 @@
+#######################################################################################
+############ CONFIG FILE FOR HUMAN SPEECH DETECTIONS AND DATA ANONYMIZATION ###########
+#######################################################################################
+
+###################
+# Path parameters #
+###################
+
+# Path to the data to be anonymised
+PATH_INPUT_DATA: "./assets/demo_data/data_to_anonymised"
+
+# Path to the result files, namely json files containing the start and end of detections
+# One json file is created per analysed file
+PATH_JSON_DETECTIONS: "./assets/demo_data/detections/json/ecoVAD"
+
+# Path to store the anonymised data (i.e. audiofiles where human speech has clearly been removed)
+PATH_ANONYMIZED_DATA: "./assets/demo_data/anonymised_data"
+
+##############################################
+# Algorithm to use in anonymisation.py script #
+##############################################
+
+# VAD algorithm to use for detecting human speech
+# In its current state this includes "ecovad", "pyannote" or "webrtcvad"
+CHOSEN_VAD: "ecovad"
+# For the chosen VAD model, make sure you tune the parameters below
+
+##########################
+# ecoVAD hyperparameters #
+##########################
+
+# Path to ecoVAD weights, the default weights are stored in ./assets/model_weights/
+# Note that you can also use your own model weights
+ECOVAD_WEIGHTS_PATH: "./assets/model_weights/ecoVAD_ckpt.pt"
+
+# Confidence threshold.
+THRESHOLD: 0.7
+
+#############################
+# WebrtcVAD hyperparameters #
+#############################
+# For more details about webrtcvad parameters refer to the github repository
+# https://github.com/wiseman/py-webrtcvad
+
+# A frame must be either 10, 20, or 30 ms in duration
+FRAME_LENGTH: 30
+
+# aggressiveness mode, which is an integer between 0 and 3. 
+# 0 is the least aggressive about filtering out non-speech, 3 is the most aggressive
+AGGRESSIVENESS: 1
+
+#######################
+# Hardware parameters #
+#######################
+
+# Whether ecoVAD and pyannote should be used on GPU
+USE_GPU: False
+
+
+##################################################################################
+# Parameters for extracting some detections from the extract_detection.py script #
+##################################################################################
+
+# The created file will be a CSV containing all the information from the detection json files
+# Useful if one wants to visualise the result 
+PATH_PARSED_JSON: "./assets/demo_data/detections/parsed_json/parsed_json.csv"
+
+# Path where the detections should be stored
+PATH_SAMPLE_DETECTIONS: "./assets/demo_data/sample_detections"
+
+# Number of samples that should be taken
+NUMBER_OF_SAMPLES: 5
+
+# Random seed
+RANDOM_SEED: 42
+
+
+
+

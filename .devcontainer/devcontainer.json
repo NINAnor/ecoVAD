@@ -1,0 +1,20 @@
+{
+    // Image to be used
+    "image": "ecovad",
+
+    // Arguments -- GPUs in our case
+    "runArgs": ["-v", "/home/benjamin.cretois/Code/ecoVAD:/app", "--shm-size", "4gb"],
+
+    // Extensions (here python and Jupyter). To find the ID of the extension
+    // 1) find extension 2) under the icon, look at identifier
+    "extensions": ["ms-python.python", "ms-toolsai.jupyter"],
+
+    // Settings, specify pyton path
+    "settings": {
+        "python.pythonPath": "/usr/local/bin/python"
+    },
+
+    // Docker specifics
+    "workspaceMount": "source=/home/benjamin.cretois/Data,target=/Data,type=bind,consistency=delegated",
+	"workspaceFolder": "/app",
+}
