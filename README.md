@@ -14,7 +14,7 @@ The software is an open source toolkit written in Python for **Voice Active Dete
 Feel free to use ecoVAD for your acoustic analyses and research. If you do, please cite as:
 
 ```
-Cretois, B., Rosten, C. & Sethi, S. S. (2022). Automated speech detection in eco-acoustic data enables privacy protection and human disturbance quantification. bioRxiv.
+Cretois, B., Rosten, C.M. & Sethi, S. S. (2022). Automated speech detection in eco-acoustic data enables privacy protection and human disturbance quantification. bioRxiv.
 ```
 
 This work is licensed under a
@@ -28,9 +28,9 @@ This repository contains all the tools necessary to **train** from scratch a dee
 
 ## Dataset
 
-If you want to test our pipeline you do not need any dataset, we provided some demo files on Zenodo at this link: `assets/demo_data` so that you can try the pipeline yourself!
+If you want to test our pipeline you do not need any dataset, we provided some demo files on OSF at this link: https://osf.io/f4mt5/ so that you can try the pipeline yourself!
 
-:bulb: Note that the ecoVAD's model weights are also on the Zenodo folder and you will need to download it if you wish to use our ecoVAD's model.
+:bulb: **Note that the ecoVAD's model weights are also on the Zenodo folder and you will need to download it if you wish to use our ecoVAD's model.**
 
 Nevertheless, if you want to train a realistic model from scratch you will need your **own soundscape dataset**, a **human speech dataset** (in our analysis we used [LibriSpeech](https://www.openslr.org/12/)) and a **background noise dataset** (in our analysis we used both [ESC50](https://github.com/karolpiczak/ESC-50) or [BirdCLEF](https://www.imageclef.org/lifeclef/2017/bird)). 
 
@@ -78,6 +78,8 @@ docker build -t ecovad -f Dockerfile .
 ```
 
 ## Usage
+
+:warning: Don't forget to download the folder `assets` from OSF: https://osf.io/f4mt5/.
 
 Our repository provides the necessary scripts and instructions to **train a VAD model** but also to **use existing ones**. If you are only interested in making predictions using an existing model please refer to the section [detecting human speech](#detecting-human-speech).
 
