@@ -77,9 +77,15 @@ cd ecoVAD
 docker build -t ecovad -f Dockerfile .
 ```
 
-## Usage
+### Download the folder `assets`
 
-:warning: Don't forget to download the folder `assets` from OSF: https://osf.io/f4mt5/.
+To be able to run the pipeline with demo data and to get the weights of the model we used in our analysis, it is necessary to download the folder `assets` located on OSF: https://osf.io/f4mt5/.
+
+:right_arrow: Just go to the link, click on `assets.zip` and click on `download`.
+
+**You are now set up to run our ecoVAD pipeline!**
+
+## Usage
 
 Our repository provides the necessary scripts and instructions to **train a VAD model** but also to **use existing ones**. If you are only interested in making predictions using an existing model please refer to the section [detecting human speech](#detecting-human-speech).
 
@@ -133,11 +139,13 @@ Or alternatively, if you have docker install and the docker image built:
 
 Note that you can choose the number of sampled detections in the `config_inference.yaml`
 
+---
+
 ### Contact
 
 If you come across any issues with the ecoVAD pipeline, please open an **issue**.
 
-For other inquiry you can contact me at *benjamin.cretois@nina.no*
+For other inquiry you can contact me at *benjamin.cretois@nina.no*.
 
 
 
