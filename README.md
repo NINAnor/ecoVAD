@@ -28,7 +28,9 @@ This repository contains all the tools necessary to **train** from scratch a dee
 
 ## Dataset
 
-If you want to test our pipeline you do not need any dataset, we provided some demo files in `assets/demo_data` so that you can try the pipeline yourself!
+If you want to test our pipeline you do not need any dataset, we provided some demo files on Zenodo at this link: `assets/demo_data` so that you can try the pipeline yourself!
+
+:bulb: Note that the ecoVAD's model weights are also on the Zenodo folder and you will need to download it if you wish to use our ecoVAD's model.
 
 Nevertheless, if you want to train a realistic model from scratch you will need your **own soundscape dataset**, a **human speech dataset** (in our analysis we used [LibriSpeech](https://www.openslr.org/12/)) and a **background noise dataset** (in our analysis we used both [ESC50](https://github.com/karolpiczak/ESC-50) or [BirdCLEF](https://www.imageclef.org/lifeclef/2017/bird)). 
 
@@ -128,6 +130,12 @@ Or alternatively, if you have docker install and the docker image built:
 `docker run --rm -v $PWD/:/app ecovad python extract_detection.py`
 
 Note that you can choose the number of sampled detections in the `config_inference.yaml`
+
+### Contact
+
+If you come across any issues with the ecoVAD pipeline, please open an **issue**.
+
+For other inquiry you can contact me at *benjamin.cretois@nina.no*
 
 
 
