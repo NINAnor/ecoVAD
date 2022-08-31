@@ -88,7 +88,7 @@ TB_COMMENT: "no-comments"
 ###########################
 
 # Numbers of workers, best to have num_workers = number of CPUs
-NUM_WORKERS: 4
+NUM_WORKERS: 0
 
 # Whether to training pipeline should use a GPU
 USE_GPU: False
