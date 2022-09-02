@@ -30,7 +30,7 @@ This repository contains all the tools necessary to **train** from scratch a dee
 
 If you want to test our pipeline you do not need any dataset, we provided some demo files on OSF at this link: https://osf.io/f4mt5/ so that you can try the pipeline yourself!
 
-:bulb: **Note that the ecoVAD's model weights are also on the Zenodo folder and you will need to download it if you wish to use our ecoVAD's model.**
+:bulb: **Note that the ecoVAD's model weights are also on the OSF folder and you will need to download it if you wish to use our ecoVAD's model.**
 
 Nevertheless, if you want to train a realistic model from scratch you will need your **own soundscape dataset**, a **human speech dataset** (in our analysis we used [LibriSpeech](https://www.openslr.org/12/)) and a **background noise dataset** (in our analysis we used both [ESC50](https://github.com/karolpiczak/ESC-50) or [BirdCLEF](https://www.imageclef.org/lifeclef/2017/bird)). 
 
@@ -79,9 +79,13 @@ docker build -t ecovad -f Dockerfile .
 
 ### Download the folder `assets`
 
+---
+
 To be able to run the pipeline with demo data and to get the weights of the model we used in our analysis, it is necessary to download the folder `assets` located on OSF: https://osf.io/f4mt5/.
 
-:right_arrow: Just go to the link, click on `assets.zip` and click on `download`.
+:arrow_right: Just go to the link, click on `assets.zip` and click on `download`.
+
+Now, simply unzip and place `assets` in the ecoVAD folder.
 
 **You are now set up to run our ecoVAD pipeline!**
 
