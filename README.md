@@ -3,6 +3,8 @@
 
 ![CC BY-NC-SA 4.0][license-badge]
 ![Supported OS][os-badge]
+[![DOI](https://zenodo.org/badge/530944006.svg)](https://zenodo.org/badge/latestdoi/530944006)
+
 
 [license-badge]: https://badgen.net/badge/License/CC-BY-NC-SA%204.0/green
 [os-badge]: https://badgen.net/badge/OS/Linux%2C%20Windows/blue
