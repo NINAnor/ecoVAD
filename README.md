@@ -16,7 +16,7 @@ The software is an open source toolkit written in Python for **Voice Active Dete
 Feel free to use ecoVAD for your acoustic analyses and research. If you do, please cite as:
 
 ```
-Cretois, B., Rosten, C.M. & Sethi, S. S. (2022). Automated speech detection in eco-acoustic data enables privacy protection and human disturbance quantification. bioRxiv.
+Cretois, B., Rosten, C. M., & Sethi, S. S. (2022). Voice activity detection in eco-acoustic data enables privacy protection and is a proxy for human disturbance. Methods in Ecology and Evolution, 00,   1–10 .   https://doi.org/10.1111/2041-210X.14005
 ```
 
 This work is licensed under a
