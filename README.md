@@ -93,7 +93,7 @@ Now, simply unzip and place `assets` in the ecoVAD folder.
 
 ## Usage
 
-Our repository provides the necessary scripts and instructions to **train a VAD model** but also to **use existing ones**. If you are only interested in making predictions using an existing model please refer to the section [detecting human speech](#detecting-human-speech).
+Our repository provides the necessary scripts and instructions to **train a VAD model** but also to **use existing ones**. If you are only interested in making predictions using an existing model please refer to the section [detecting human speech](#detecting-human-speech-using-a-state-of-the-art-vad-model).
 
 :bulb: **Note that we recommand using the ecoVAD pipeline if you have a large enough dataset that can be used to train the model, otherwise pyannote is a very good alternative**
 
